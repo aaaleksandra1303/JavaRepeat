@@ -50,5 +50,5 @@ local.properties
 # Code Recommenders
 .recommenders/
 
-# Code Metadata
-.metadata
+# Code metdata
+.metadata/
