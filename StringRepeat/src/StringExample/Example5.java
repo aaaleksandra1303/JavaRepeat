@@ -25,12 +25,12 @@ public class Example5 {
 		
 		
 		//with using StringBuilder if we want change something later or use other methods ex.reverse
-		// palindom
+		// palindrom
 		
 		System.out.println("Put nex word");
 		String word2 = sc.nextLine();
 		StringBuilder nameBuilder = new StringBuilder(word2);
-		//StringBuilder nameBulder2 =nameBuilder1.reverse();
+		
 		String name = nameBuilder.toString();
 		String nameReverse =nameBuilder.reverse().toString();
 		name.toUpperCase();
