@@ -1,0 +1,32 @@
+package StringExample;
+
+import java.util.Scanner;
+
+/*Odczytaj dany wyraz z konsoli oraz liczbę naturalną n.
+Nasz program powinien zwrócić n ostatnich znaków wyrazu.
+Dla wywołania:
+Alamakota
+3
+Program powinien zwrócić:
+ota.
+*/
+
+public class Example2 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		String name;
+		int charNumber;
+		System.out.println("Put some word");
+		name =sc.nextLine();
+		System.out.println("Put number of character to show");
+		charNumber=sc.nextInt();
+		
+		String shortName = name.substring(name.length()-charNumber,name.length());
+		System.out.println("The last " +charNumber+" characters, of the word "+ name+" are :"+shortName);
+		
+
+	}
+
+}
