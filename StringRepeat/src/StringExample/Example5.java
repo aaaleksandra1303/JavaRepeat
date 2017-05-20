@@ -23,6 +23,29 @@ public class Example5 {
 			System.out.println("The first and the last letter different in the word "+word);
 		}
 		
+		
+		//with using StringBuilder if we want change something later or use other methods ex.reverse
+		// palindom
+		
+		System.out.println("Put nex word");
+		String word2 = sc.nextLine();
+		StringBuilder nameBuilder = new StringBuilder(word2);
+		//StringBuilder nameBulder2 =nameBuilder1.reverse();
+		String name = nameBuilder.toString();
+		String nameReverse =nameBuilder.reverse().toString();
+		name.toUpperCase();
+		nameReverse.toUpperCase();
+		
+		
+		
+		
+		if(name.equals(nameReverse)){
+			System.out.println("The word is a palindrom");
+		}else{
+			System.out.println("The word is not a palindorm");
+		}
+		
+		
 	
 		sc.close();
 	}
