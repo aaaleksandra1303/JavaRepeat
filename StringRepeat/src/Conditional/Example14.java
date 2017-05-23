@@ -17,7 +17,7 @@ poprawnie wprowadzone hasło.
 		String correctPassword=null;
 
 		boolean isCorrect=false;
-
+ ///with loop while
 		while(isCorrect==false){
 			System.out.println("Enter correct password");
 			correctPassword=sc.nextLine();
@@ -28,6 +28,13 @@ poprawnie wprowadzone hasło.
 		}
 		System.out.println("Your password is correct!");
 		
+	// with loop do{}while()
+		do{
+			System.out.println("Enter correct password");
+			correctPassword=sc.next();
+			
+		}while(!password.equals(correctPassword));
+		System.out.println("Your password is correct!");
 		
 		sc.close();
 		
