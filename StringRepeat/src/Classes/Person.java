@@ -12,6 +12,12 @@ age,
 gender.
 Stwórz odpowiedni konstruktor, który przyjmuje wszystkie argumenty. Dodaj metody
 dostępowe do zmiennych obiektu. Stwórz przykładowe obiekty.
+
+
+Zadanie7.
+Z wcześniejszych ćwiczeń skorzystaj z definiowanej Osoby (Person), stwórz metodę
+statyczną getAllPeople zwracającą fullName wszystkich osób. Zdefiniuj metodę
+toString.
  */
 public class Person {
 	private String name;
@@ -64,7 +70,20 @@ public class Person {
 	 protected char getSex(){
 		 return sex;
 	 }
+	
+	 public static void getAllPeople(List<Person> people)
+	 {
+		 String fullName=null;
+		 for(Person p : people){
+			fullName = p.getName()+" "+p.getSurname();
+			System.out.println(fullName);
+		 }
+	 }
 	 
+	 public String toString()
+	 {
+		 return getName()+ " "+getSurname()+ " "+ getAge()+" "+getSex();
+	 }
 	 
 	 
 
@@ -84,6 +103,9 @@ public class Person {
 			System.out.println(p.getName());
 			
 		}
+		
+		System.out.println(p1.toString());
+		getAllPeople(people);
 		
 	
 	}
